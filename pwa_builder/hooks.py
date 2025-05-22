@@ -242,3 +242,12 @@ app_license = "gpl-3.0"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+# Routes
+# ------
+# website_route_rules = [
+#     {
+#         "from_route": "/api/method/pwa_builder.api.manifest.get_manifest",
+#         "to_route": "pwa_builder.api.manifest.get_manifest",
+#         "type": "json"
+#     }
+# ]
