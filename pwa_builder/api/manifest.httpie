@@ -1,2 +1,1 @@
-
-http GET http://localhost:8000/api/method/pwa_builder.api.manifest.get_manifest --verbose
+http GET http://localhost:8000/manifest.webmanifest --follow --verbose

@@ -1,0 +1,7 @@
+{% extends "templates/base.html" %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="manifest" href="/api/method/pwa_builder.api.manifest.get_manifest">
+    <link rel="assetlinks" href="/api/method/pwa_builder.api.manifest.get_assetlinks">
+{% endblock %}

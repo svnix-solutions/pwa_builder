@@ -244,10 +244,24 @@ app_license = "gpl-3.0"
 
 # Routes
 # ------
-# website_route_rules = [
-#     {
-#         "from_route": "/api/method/pwa_builder.api.manifest.get_manifest",
-#         "to_route": "pwa_builder.api.manifest.get_manifest",
-#         "type": "json"
-#     }
-# ]
+website_route_rules = [
+    {
+        "from_route": "/api/method/pwa_builder.api.manifest.get_manifest",
+        "to_route": "pwa_builder.api.manifest.get_manifest",
+        "type": "json"
+    },
+    {
+        "from_route": "/api/method/pwa_builder.api.manifest.get_assetlinks",
+        "to_route": "pwa_builder.api.manifest.get_assetlinks",
+        "type": "json"
+    }
+]
+
+# Base Template
+# ------------
+base_template = "templates/base_template.html"
+
+website_redirects = [
+    {"source": "/manifest.webmanifest", "target": "/api/method/pwa_builder.api.manifest.get_manifest"},
+    {"source": "/.well-known/assetlinks.json", "target": "/api/method/pwa_builder.api.manifest.get_assetlinks"}
+]
